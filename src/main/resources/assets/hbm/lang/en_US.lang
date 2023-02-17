@@ -953,7 +953,7 @@ desc.misc.pos=Set pos to: %s, %s, %s
 desc.misc.posSet=Position set!
 desc.item.wasteCooling=Cool in a Spent Fuel Pool Drum
 desc.item.zirnoxBreedingRod=§2[ZIRNOX Breeding Rod]$§ePlace next to fuel rods to breed$§eLasts %d ticks
-desc.item.zirnoxRod=§a[ZIRNOX Fuel Rod]$§eGenerates %1$d heat per tick$§eLasts %2$d ticks
+desc.item.zirnoxRod=§a[ZIRNOX Fuel Rod]$§eGenerates %1$d heat per tick$§eLasts %2$d ticks$§eLeft: %3$d percent
 
 digamma.playerDigamma=Digamma exposure:
 digamma.playerHealth=Digamma influence:
