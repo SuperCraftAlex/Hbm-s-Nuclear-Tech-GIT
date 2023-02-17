@@ -20,7 +20,9 @@ public class ItemZirnoxRod extends ItemFuelRod {
 
 	@Override
 	public void addInformation(ItemStack itemstack, EntityPlayer player, List list, boolean bool) {
-		double leftPercentage = Math.round((100-((double)itemstack.stackTagCompound.getInteger("life")/(double)this.lifeTime)*100) * 100.0) / 100.0;
+		double leftPercentage = 100.00d;
+		try { leftPercentage = Math.round((100 - ((double) itemstack.stackTagCompound.getInteger("life") / (double) this.lifeTime) * 100) * 100.0) / 100.0;
+		} catch (Exception e) {}
 
 		String[] descLocs = I18nUtil.resolveKeyArray("desc.item.zirnoxRod", heat, BobMathUtil.getShortNumber(lifeTime), leftPercentage);
 		
