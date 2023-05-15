@@ -992,6 +992,8 @@ public class ModEventHandlerClient {
 			
 			//if anything errors here, run ./gradlew clean setupDecompWorkSpace
 			for(Object o : KeyBinding.keybindSet) {
+				if(!(o instanceof KeyBinding))
+					continue;
 				KeyBinding key = (KeyBinding) o;
 				
 				if(key.getKeyCode() == keyCode && KeyBinding.hash.lookup(key.getKeyCode()) != key) {
